@@ -1,0 +1,192 @@
+                                          React Interview Question
+                                  ----------------------------------------
+
+1.What is CDN?
+--> CDN is content delivery network where react library is hosted and we are using that via CDN links.
+
+2.What is React.createElement?
+--> React.createElement is an JavaScript object.
+    It takes three arguments 
+     1. name of the tag.
+     2. object (inside it we write attributes of tag).
+     3. What we want to put inside that tag as children.
+     for example :
+        const heading = React.createElement(
+        "h3",
+        { id: "heading" },
+        "Hello world using react"
+        );
+
+3.What is render?
+--> render method converts React.createElement into an html tag and put it on dom.
+    when we do render so it replaces the code which is written inside root html.
+
+4.What is npm?
+--> It is package manger which manages all the packages.
+    It is one of the biggest repositery where all the packages are hosted.
+
+5.Difference b/w package.json and packagelock.json file?
+--> package.json : When we do npm init it create an package.json file.
+                   It is the configuration file for npm.
+                   It tracks the version of all the dependency.
+
+    packagelock.json: It is a lockfile that contains information about the dependencies/packages with their exact version.
+
+6.What is bundler?
+--> It bundles all the code so that we can send it to the production.
+    It also create local server for us -> it host your project on localhost.
+    It also does HMR(hot module replacement) -> when you save it automatically refreshes your page .
+    It also does caching-fatser builds.
+    It also does image optimization,minfication.
+    It compress the code.
+    It does codespliting,diffrential bundling(means project supported on oblder browsers also).
+    It does tree shaking(removes unused code).
+    It does Diagnostic(it gives beauiful error to understand).
+    Webpack,Parcel,Viet,etc are some bundlers.
+
+7.What is Dependency or Package?
+--> When our project need code from other packages to run, these third party code are known as dependency.
+    There are two type of dependency 1.Dev dependency 2.Normal dependency
+    Dev dependency-> when we need any package in developent or testing we can install that package as dev dependency.
+    Normal dependency-> when we need any package in production we can install that package as normal dependency.
+
+8.What is node_mdules?
+--> It contains all the code of the dependency that we fetch from npm.
+    It is like a database which contain data of the dependency.
+    
+9.What is transitive dependency?
+--> When we install any package it has its own dependency and these dependency has its own dependency 
+    this is known as transititve dependency.
+
+10.Difference b/w npm and npx?
+--> npm-> when we install any package we use npm i package name
+    npx-> when we execute the package we use npx package name.
+
+11.What is jsx?
+--> Jsx stands for JavaScript XML.
+    It is html like syntax(not html).
+    It is a easier syntax to creat react element.
+    If you want to give attribute to jsx then use camelcase.
+    Inside {} this we can write any piece of javascript code in jsx
+
+12.What is Babel?
+--> It is an Javascript transpiler(compiler).
+    It is an transpliler which converts jsx code to which browser understand.
+    Older browser does not understand es6 so bable transpile the code that older browser understand.
+
+13.What is componenet?
+--> Everything in react is componenet.
+    ex:button,header,card,etc
+    There are 2 type of component?
+    1.Class based component(older way of writing component).
+    2.Functional component(newer way of writing component).
+
+14.What is functional component?
+--> It is a normal javascript function which returns some piece of jsx(react element).
+    It is good to create function componenet with capital letter(it is not mandatory but it is common        convention so that react understand it that it is functional component).
+
+15.Difference between ReactElement and ReactComponent?
+--> ReactElement return js object.
+    ReactComponent return some piece of jsx or react element
+    
+    At the time of rendering react element we write element name
+    At the time of rendering react component we write component name inside the angular bracket.
+
+16.What is component composition?
+--> It means rendering component inside the component.
+
+17.What is Props?
+--> Props are just normal arrgument to a function.
+    Using props we can pass dynamic data to a component.
+    Props are immutabel we can not change props.
+    In react prorperties are known as props.
+    Props return object.
+
+18.What is config driven ui?
+--> It means ui is controlled by the data(which come from backend). or ui is driven by config.
+    for ex: swiggy present on diffrent location and on each location their is diffrent info,this happens beacuse swiggy frontend(ui) is controlled by config this is known as config driven ui.
+    If we want red color background in mumbai and orange color in jaipur we can do this using config driven ui.
+
+19.Why it is important to use key while using map?
+--> It is important because if you do map over something and does't give key then react can not identify each element as unique and if new element comes at that time it will rerender all the element.
+
+20.What is Hook?
+--> Hooks are normal javascript function.
+    Functions starting with use are called Hooks.
+    the rules of using hook are:
+    Hooks must be declared at the top level of componenet.
+    Don't use hooks inside loop,conditions,nested function.
+    Only call Hooks from React function components,not from normal js function.
+
+21.What is useState hook?
+--> It is new way of creating variable.
+    If we want to create local variable inside react,you need to use state variable and 
+    state variable are create using useState Hook.
+    It returns an array.
+    It has two parameters the first one is variable and second one is function which is used to update variable.
+
+22.Why do we need state variable?
+--> Because when we create normal js variable and updates, it does not update the ui because react does't track it. That's why we need superpowerful state variable(react keep track ok it and when ever state variable change it will update the ui).
+
+23.What is vitual dom?
+--> It is the representation of Actual DOM.
+
+24.What is Diff algorithm?
+--> It means finding the diffrenece between older vartual dom and new vartual and then updated the actual dom.
+
+25.What is React Fiber?
+-->In react 16 react come up with new alogorithum which is known as react fiber.
+   React Fiber is the new reconciliation engine in React 16.
+
+26.Why react is fast?
+--> Beacuse it efficiently do dom manipulation. It has vartual dom.
+    It has diff algorithm which find the diff between the older vatrual dom and new virtual dom and then updated the actual dom(ui), this whole is known as react fiber.
+
+27.What is Monolith Architecture?
+--> Monlith is the traditional way of creating application.
+    At that time there used to be single big application,under which everything like api, auth, database, ui,etc are writen in single application. if we want change the ui then we have to complie the whole project and deploy it.
+
+28.What is Microservices Architecture?
+--> In Microservices we have different small services such as ui service,api service,db service,notification service,payment service,etc and all the services combine together to create a application.
+This is also known as seperation of concern or single responsibility principle means each services has there own job nobody interfares.
+
+29.Ways to fetch data from backend(api)?
+--> 1.As user loads the website make an api call and then render it on ui. in this if fetching data from api
+      takes 500ms to fetch at that time there is nothing to show on screen and as soon as data comes and
+      sundenly appears on screen. this not gives better ux.
+    2.As user loads the website render something on screen and then make api call after that render once again and update the ui.This gives better ux.
+
+30.What is useEffect hook?
+--> whenever we want to do something after the component render we can use useEffect hook.
+    useEffect takes two parameters, first one is a callback function and second is dependency array.
+    useEffect is called after the component renders.
+    If we dont put dependency array useEffect will be called on every render.
+    If we put empty dependency arry useEffect will be called once only after render.
+    If we put state variable inside dependency array useEffect will be called after every time my state
+    variable updates.
+
+31.What is conditional redering?
+--> Redering something on the basis of condition.
+
+32.How to use React Router Dom?
+--> First we have to download react router dom package from npm, by using npm i react-router-dom command.
+    After that we have to create a configuration and for creating configuration we have import createBrowserRouter from react-router-dom.
+    createBrowserRouter takes an configuration and it takes an array of objects.
+    Each object defines a path and what happens on that path. 
+    for example {
+		  path:'/',
+	          element:<Body/>,
+		}, // this tells that if path was '/' then load Body component.
+we 
+    Next thing is to provide this configuration so that it render's on screen and for that we have import RouterProvider from react-router-dom.
+    If anyone trys to access any random path, react-router-dom creates an error page for that.
+
+33.What is Single Page Application(SAP)?
+--> React apps are spa.
+    SPA will not reload the page , it will not make network call when we are changing page. It will interchanged the components.
+
+34.Redux and Redux toolkit?
+--> Redux : Redux helps to manage "global" state - state that is needed across many parts of your application.
+            for ex : If i have to pass data from app component to 10 level nested deep so i have to pass data from one to another component, this is known as prop drilling. So to avoid this we can use redux.
+
+    Redux-toolkit : Redux Toolkit is our recommended approach for writing Redux logic. It contains packages and functions that we think are essential for building a Redux app.

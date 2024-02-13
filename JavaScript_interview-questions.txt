@@ -1,0 +1,151 @@
+                                         JavaScript  Interview Questions
+                                     ----------------------------------------		
+
+1. what is variable? 
+--> It is like a placeholder or empty box in which we can store data.
+    for creating variable we use var keyword for eg: var name="jhon";
+    Advantage of using varibale are :
+    1.without variable if i want to change value than i have to chage it manually at all the place where i have use value, but if i have store that value inside the variable then i have to change it at only one place and it automatically updates at all places.
+    2.without variable if i want to reuse the same value at more than one place then i have to do it manually, but if i have store that value inside the variable then i can reuse it manytimes using variable name.
+
+2.what is string?
+--> It is a sequence of characters or alphabates.
+    And for creating string we can use double quotes or single quotes vice versa for eg: var name='my name is john'.
+    It is the older way of creating string.
+    Now we use template literals(means backticks) to creating string.
+ 
+3.what is function?
+--> It is a group of reusable code which can we called anywhere in the program;
+    when we call or invoke the function the code inside the function is executed.
+    for creating function we use function keyword followed by the function name followed by the round brackets 
+and inside round brackets we can write parameter followed by curly brackets and inside curly brackets we write 
+code which we to execute. And for calling function we use function name followed by round brackets.
+    We can create function in 3 ways 
+    1. By function decleration -> Creating a function by using function keyword followed by function name is called function statement.
+    2. By function expression -> Creating a function and assign it to the variable is called function expression.
+    3. By arrow function -> Arrow function introduce in es6 2015 , arrow function allow us to write shorter function syntax.
+
+4.what is datatype?
+--> The type of value we stored inside the variable is known as datatype.
+    There are 2 type of datatype 1. primitive data type 2.object
+    
+5.Define var,let and const?
+--> we use var,let and const for declaring variable.
+    var is the older way of declaring variable and let and const are new way of declaring variables, they are introduced in es6.
+    
+    we use var keyword to declare variables which value can change later.
+    var can be updated , redeclared and var can be declared without initialization. It is function scope.
+    
+    we use let keyword to declare variables which value can change later. 
+    let can updated , but let can't be redeclared and let can be declared without initialization. It is block scope.
+
+    we use const keyword to declare variables which value cannot be change at any point in future.
+    const can't be update or redeclared and const cannot be declared without intialization. It is block scope.
+
+6.What is ternary operator?
+--> It eveluates a condition and execute a block of code based on the condition.
+    It can be used to replaced if else statement.
+    syntax of ternary operator is first we write condition then ? after that we write the code which we want to execute if the condition is true then : we write the code which we want to execute if the condition is false.
+
+7.what is spread and rest operators?
+--> spread-> It is used to spread all the things and it is used only on iterable things such as array object.
+             It is used anywhere except parameter box .
+             syntax of spread operator is three dots and name ...a
+             one usecase is if we want to copy one array into another.
+   rest-> The rest parameter syntax allows a function to accept an indefinite number of arggument as an array.
+          It always be the last parameter.
+          syntax of rest operator is three dots and name ...a.
+
+8.what is optional channing?
+--> If we try to access deply nested object properties and it is not present then it give error but if i use optional channing it does not give error it gives undefine and code works fine.
+    It is introduced in ECMAScript 2020 also known as ES11.
+    syntax is ?.
+
+9.what is destructuring?
+--> There are two type of destructuring.
+    1.array destructuring 2.object destrucutring.
+    array destructuring means unpack value from array.
+    object destructuring means unpack properties from object.
+
+10.what is arrow function?
+--> It is introduce in es6 2015.
+    arrow function allow us to write shorter function syntax.
+    for using arrow function we should know 3 consditions
+    1.when we have only one parameter then we have choice to use or not to use round brackets ().
+    2.when we have more than or less than one parameter then it is mandatory to use round brackets ().
+    3.when we have only 1 statement then we have choice to use or not to use {} and return keyword..
+
+11.what is execution context?
+--> when a javascript program run it creates a execution context.
+    Execution context is like a big contianer or box in which whole code is executed.
+    It has two components init 1.Memory 2.Code component.
+    Memory component -> it is the place where all variables and functions are store in key:value pair.
+                        it allocates undefined to the variables and in case of funtion it stores the whole function copy.
+    code component -> it is the place where all calculation are done and then code is executed.
+
+12.what is synchronus sigle threaded?
+--> Javascript is a synchronus sigle threaded language it means it can execute one command at a time in a specific order. once the intial line code is executed then it moves to another line and so on.
+
+13.what is callstack?
+--> so basiclly callstack maintains the order of execution of execution context.
+    call stack is also known as runtime stack, control stack,execution context stack.
+    for eg: when a js program is run an global execution context is created and it push inside call stack, and after that a function is invoked then again a new execution context is created and push inside call stack so it maintains the order of execution.
+
+14.what is Hoisting in javascript?
+--> Hoisting means we can access the variables and function before its decleartion or before its intialization or put any value inside it.
+for eg: console.log(a);
+         var a=2;
+so, it does not gives error it give undefined.
+
+15.undefined vs not defined?
+--> undefined: js program runs it create an execution context and it allocates memory to all variables with a placeholder called undefined even before a single line of code is executed.
+    undefined is like a placeholder which is store untill the variable is assigned some value.
+    
+    not-defined: if try to access which is not present or we not allocate memory too is callednot-defined.
+
+16.Is let and const hoisted or not?
+--> Yes, let and const are also hoisted but they are hoisted differently than var and they are in the temporal dead zone for the time being.
+    In case of var they are hoistied and allocate memory in global space.
+    In case of let and const they are also hoistied and allocate memory but they are stored in different memory than global.
+    we can't access this memory space before we can't initialize them.
+
+17.What is Temporal Dead Zone?
+--> It is time since when let and const were hoistied till they are initialized.
+    The time between hoisting and initialized is known as temporal dead zone.
+
+18.What is Dynamic typing or losely typed or weakly typed language?
+--> Javascript is a loosely typed language means it does not attaches its variable with any data type.
+    for ex: if initially x is string later on we can put number or boolean in x.
+    loosely typed language is also known as weakly type language.
+
+19.what is Template Literals?
+--> It is introduced in es6.
+    we use use backticks to create string.
+    we can use both single and double quotes inside ``
+    using template literals we can use variables indside string.
+
+20.what is synchronus and asynchronus javascript?
+--> synchronus -> Javascript is a synchronus single threaded language it means it can execute one command at a time and in an specific order. once the initial incode is executed then it moves to next line and so on.
+It also blocks the execution of code or callstack.
+
+Asynchronus -> If we want do something which takes time to execute the code , so till that time the next line code is not executed so it blocks the callstack. so to execute next line of code we use asynchronus js.
+It doesn't block the callstack.
+To use asynchronus js we use callback function.
+
+21.What is Higher Order Function (HOF)?
+--> A function which take another function as an argument or returns a function from itself is known as hof.
+    The function which is passed as argument is called callback function.
+    for eg: Map,Reduce,setimeout.
+
+22.What is callback function?
+--> A function which is passed into another function as an argument is called callback function.
+    Because of callback function asynchronus js is exists.
+    With the help of callback function we can do asynchronus operations.
+    for eg: setimeout.
+    while using callback function we can face some issues like invrsion of control or callbackhell.
+    Inversion fo control -> It means we can't directly call callback function.first we have to call hof or outer function then it calls callback or inner function.So it looses control of calling and it depends on hof and hof has control over it.
+    CallbackHell -> Callback hell occurs when we deply nested callback function with in a function.Every callback function depends on the previous function to execute. And the shape of code is like a pyramid so it is also called pyramid of doom.
+    It makes code very difficult to understand and maintain, so to solve this problem promise was introduced.
+
+23.What is Promise?
+--> 

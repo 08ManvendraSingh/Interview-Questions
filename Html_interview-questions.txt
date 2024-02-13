@@ -1,0 +1,221 @@
+                                                                                                  HTML INTERVIEW QUESTIONS
+                                                                                                  -----------------------------------------
+
+1.What is HTML?
+-->HTML is known as Hyper Text Markup Language.
+-->It is the standard language used for creating and displaying pages on web.
+-->HTML element is defined by start tag ,some content and end tag.
+
+2.What are tags?
+-->content is palced in between HTML tags in order to properly format it.
+
+3.Do all HTML tags comes in a pair(means open and close tag)?
+-->No, there are single HTML tags that does not have closing tag
+-->ex-<br>,<hr>,<link>.
+
+4. What are some of the common lists that can be used when designing a page?
+--> ordered list,unordered list, description list.
+
+5. How do you insert a comment in HTML?
+--> We can insert a comment in HTML by beginning with a lesser than sign and 
+      ending with a greater than sign.
+      By using <!--       -->
+
+6.Do all character entities display properly on all systems?
+--> No, there are some  entities that connot be displayed on browser because
+     browser does not support.
+--> If browser does not support  entities are diaplay as boxes.
+
+7. How do you insert a copyright symbol on a browser page?
+--> To insert the copyright symbol, you need to type  & #169 in HTML.
+
+8. If you see a web address on a magazine, to which web page does it point?
+--> Every web page on the web can have a separate web address. Most of these
+      addresses are relative to the top-most web page. 
+
+9. Do older HTML files work on newer browsers?
+--> Yes, older HTML files are compliant to the HTML standard.
+-->But some features not work .
+
+10. Does a hyperlink apply to text only?
+-->  No, hyperlinks can be used in the text as well as images.
+--> You can convert an image into a link, when you clicked it opens new page.
+
+11. If the user’s operating system does not support the needed character, 
+       how can the symbol be represented?
+--> In case operating system does not support a particular character,
+      you can use image in place of it.
+
+12. How do you change the number type in the middle of a list?
+--> The type attribute can be used to change the numbering type for any list item.
+
+13. State bullet types available in HTML?
+--> 1. ordered lists including alphabetical and Roman numerals. 
+      2.unordered list include  disc, square, or circle.
+
+14. How do you create multicolored text in a webpage?
+--> To create text with different color, use different tag for every character on 
+       which you want to apply color.
+
+15. What will happen if you overlap sets of tags?
+--> If two sets of HTML tags are overlapped, only the first tag will be recognized.
+--> You will find this problem when the text does not display properly on the browser screen.
+
+16. What if there is no text between the tags or if a text was omitted by mistake?
+       Will it affect the display of the HTML file?
+--> If there is no text between the tags, then there is nothing to format. 
+      Therefore no formatting will appear. 
+
+17. Is it possible to set specific colors for table borders?
+--> You can specify a border color using style sheet.
+
+18. How do you create a link that will connect to another web page when clicked?
+--> To create links that connect to another web page use link tag and href attribute.
+
+19. What other ways can be used to align images and wrap text?
+--> Table can be used to position text and images. Another useful way to wrap text 
+      around an image is to use style sheet.
+
+20. Can a single text link point to two different web pages?
+--> No, the tag can accept only a single href attribute.
+
+21. What are the limits of the text field size?
+-->The default size for a text field is around 13 characters. 
+
+22. Difference between Id and Class selectors?
+--> Multiple tag can have same Class whereas, Id is unique you  cannot apply it to 
+      multiple tag using same id.
+
+23.What are the various formating tag in HTML?
+--> <b>, <i>, <em>, <big>, <sub>, <sup>, <del>, <strong>, <mark>, <ins>.
+
+24. What are the significance of head and body tag?
+--> Head tag :  1.There is only one head tag in html document.
+                           2.It always be before the body tag.
+                           3.Head tag provides information about the document.
+                           4.The tag come inside the head tag like <link>, <meta>, <script>, <style>
+                           are not displayed on the webpage.
+
+--> Body tag : 1.There is only one body tag in html document.
+                          2.It always come after the body tag.
+                         3.All content which need to be displayed on web page like <image>, <p>, <h>,
+                         <audio>, <video>, <div> are come inside the body tag.
+
+25. What is difference between Inline or Block Element?
+--> Inline Element : 1.Just take the space that is necessary for the content.
+                                    2.Does not start from a new line.
+                                    3.<span>, <a>, <img>, <button>, <select>, <em>, <sub>, <label>.
+
+-->Block Element : 1.Consume the full width of the page available.
+                                   2.Starts form new line.
+                                   3.<div>, <p>, <h>, <form>, <tabel>, <hr>, <video>, <section>, <header>, <footer>.
+
+26. Can we display web page inside a web page or is nessting of webpage is possible?
+--> Yes, we can display a web page inside a html web page by using <iframe> tag.
+
+27. What is difference between <strong> and <b> tag?
+--> The main difference between the <bold> tag & <strong> tag is that the strong tag 
+      semantically emphasizes the important word or section of words 
+      while the bold tag is just offset text conventionally styled in bold
+
+28. What is formatting in HTML? 
+--> The HTML formatting is a process of format the text for a better look and feel. 
+       It uses different tags to make text bold, italicized, underlined.
+
+29. Is it possible to change the color of the bullet?
+--> The color of the bullet is always the color of the first text of the list.
+      So, if you want to change the color of the bullet,  you must change the color of the text.
+
+30.  What are empty elements?
+--> HTML elements with no content are called empty elements. For example: <br>, <hr> etc.
+
+31. What is the use of a span tag? Give one example.
+--> The span tag is used for following things:
+         For adding color on text
+         For adding background on text
+         Highlight any color text
+
+32. What is the use of an iframe tag?
+--> An iframe is used to display a web page within a web page.
+
+33. What is <!DOCTYPE html>?
+--> <!DOCTYPE html> is used to instruct the web browser about the HTML page.
+
+34.  What is SVG?
+--> HTML SVG is used to describe the two-dimensional vector and vector/raster graphics. 
+      SVG images and their behaviors are defined in XML text files
+
+35.  What is the use of the required attribute in HTML5?
+--> It forces a user to fill text on the text field or text area before submitting the form. 
+      It is used for form validation.
+
+36. What is Cell Spacing and Cell Padding?
+--> Cell Spacing is referred to as the space or gap between the two cells of the same table. 
+      Whereas, Cell Padding is referred to as the gap or space between the content of the cell
+      and cell wall or cell border.
+
+37.  List the media types and formats supported by HTML?
+--> Images– png, jpg, jpeg, gif, apng, svg, bmp, BMP ico, png ico
+      Audio– MIDI, RealAudio, WMA, AAC, WAV, Ogg, MP3, MP4
+      Video– MPEG, AVI, WMV, QuickTime, RealVideo, Flash, Ogg, WebM, MPEG-4 or MP4
+
+38. What are the limits of the text field size?
+--> The default size for a text field is around 13 characters.
+
+39. How do you create text on a webpage that allows you to send an email when clicked?
+--> To change the text into a clickable link to send an email, you need to use the mailto command within the href tag. 
+      You can write it in the following way: <a href=”mailto:youremailaddress”>text to be clicked</a>
+
+40. Difference between HTML and XHTML?
+--> 1. HTML stands for Hypertext Markup Language.
+           XHTML stands for Extensible Hypertext Markup Language.
+       
+--> 2. It was developed by Tim Berners-Lee.
+           It was developed by W3C i.e World Wide Web Consortium.
+
+41. What is the difference between HTML and HTML 5?
+--> 1. Older versions of HTML are less mobile-friendly.
+           HTML5 language is more mobile-friendly.
+
+--> 2. Elements like nav and header were not present.
+            New elements for web structure like nav, header, footer, etc.
+
+--> 3. Does not allow JavaScript to run in the browser
+           Allows JavaScript to run in the background. This is possible due to JS Web worker API in HTML5.
+
+42. What are attributes?
+--> An attribute is used to provide extra or additional information about an element.
+
+43. What is the difference between <em> and <i> tag?
+--> The main difference between these two tags is that the <em> tag semantically emphasizes the important word 
+      or section of words while the <i> tag is just offset text conventionally styled in italic.
+
+44. What are HTML entities?
+--> HTML provides some method to display reserved characters. Reserved characters are those characters 
+      that are either reserved for HTML or those which are not present in the basic keyboard.
+
+45. What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element?
+--> When we use the attribute “visibility: hidden” for an HTML element then 
+      that element will be hidden from the webpage but still takes up space.
+      If we use the “display: none” attribute for an HTML element then the 
+      element will be hidden, and also it won’t take up any space on the webpage
+
+46. Difference between link tag <link> and anchor tag <a>?
+--> The anchor tag <a> is used to create a hyperlink to another webpage or 
+      to a certain part of the webpage and these links are clickable,
+      whereas, link tag <link> defines a link between a document and an external 
+      resource and these are not clickable.
+
+47.  What are Semantic Elements?
+--> Semantic elements are those which describe the particular meaning to the browser and the developer.
+      Elements like <form>, <table>, <article>, <figure>, etc., are semantic elements
+
+48. What is a ‘Marquee’ Tag in HTML?
+--> You can put scrolling text with a Marquee tag. With the help of this tag, an image or text
+      can be scrolled up, down, left, or right.
+
+
+
+
+
+
